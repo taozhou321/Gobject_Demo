@@ -7,7 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2A078C523CC521F0064845F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078C423CC521F0064845F /* main.c */; };
+		C2A078E123CC52D10064845F /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A078E023CC52D10064845F /* libglib-2.0.a */; };
+		C2A078E323CC52E20064845F /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A078E223CC52E20064845F /* libgobject-2.0.a */; };
+		C2A0793B23CC54390064845F /* Gobject_demo1.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078CC23CC52380064845F /* Gobject_demo1.c */; };
+		C2A0793C23CC54390064845F /* Gobject_demo1.h in Sources */ = {isa = PBXBuildFile; fileRef = C2A078CD23CC52380064845F /* Gobject_demo1.h */; };
+		C2A0793D23CC54390064845F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A078CE23CC52380064845F /* main.m */; };
+		C2A0793E23CC54390064845F /* Kb_article.h in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D023CC52380064845F /* Kb_article.h */; };
+		C2A0793F23CC54390064845F /* Kb_bibtex.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D123CC52380064845F /* Kb_bibtex.c */; };
+		C2A0794023CC54390064845F /* Kb_bibtex.h in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D223CC52380064845F /* Kb_bibtex.h */; };
+		C2A0794123CC54390064845F /* Kb_article.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D323CC52380064845F /* Kb_article.c */; };
+		C2A0794223CC54390064845F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D423CC52380064845F /* main.c */; };
+		C2A0794323CC54390064845F /* My_Udisk.h in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D623CC52390064845F /* My_Udisk.h */; };
+		C2A0794423CC54390064845F /* MyIUSb.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D723CC52390064845F /* MyIUSb.c */; };
+		C2A0794523CC54390064845F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D823CC52390064845F /* main.c */; };
+		C2A0794623CC54390064845F /* My_Udisk.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078D923CC52390064845F /* My_Udisk.c */; };
+		C2A0794723CC54390064845F /* MyIUSb.h in Sources */ = {isa = PBXBuildFile; fileRef = C2A078DA23CC52390064845F /* MyIUSb.h */; };
+		C2A0794823CC54390064845F /* My_File.h in Sources */ = {isa = PBXBuildFile; fileRef = C2A078DC23CC52390064845F /* My_File.h */; };
+		C2A0794923CC54390064845F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078DD23CC52390064845F /* main.c */; };
+		C2A0794A23CC54390064845F /* My_File.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078DE23CC52390064845F /* My_File.c */; };
+		C2A0796C23CC57EB0064845F /* libglib-2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A0796B23CC57EB0064845F /* libglib-2.0.dylib */; };
+		C2A0796E23CC58000064845F /* libgobject-2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A0796D23CC58000064845F /* libgobject-2.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +43,133 @@
 
 /* Begin PBXFileReference section */
 		C2A078C123CC521F0064845F /* Gobject_Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gobject_Demo; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2A078C423CC521F0064845F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C2A078CC23CC52380064845F /* Gobject_demo1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Gobject_demo1.c; sourceTree = "<group>"; };
+		C2A078CD23CC52380064845F /* Gobject_demo1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gobject_demo1.h; sourceTree = "<group>"; };
+		C2A078CE23CC52380064845F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2A078D023CC52380064845F /* Kb_article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kb_article.h; sourceTree = "<group>"; };
+		C2A078D123CC52380064845F /* Kb_bibtex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Kb_bibtex.c; sourceTree = "<group>"; };
+		C2A078D223CC52380064845F /* Kb_bibtex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kb_bibtex.h; sourceTree = "<group>"; };
+		C2A078D323CC52380064845F /* Kb_article.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Kb_article.c; sourceTree = "<group>"; };
+		C2A078D423CC52380064845F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C2A078D623CC52390064845F /* My_Udisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = My_Udisk.h; sourceTree = "<group>"; };
+		C2A078D723CC52390064845F /* MyIUSb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyIUSb.c; sourceTree = "<group>"; };
+		C2A078D823CC52390064845F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C2A078D923CC52390064845F /* My_Udisk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = My_Udisk.c; sourceTree = "<group>"; };
+		C2A078DA23CC52390064845F /* MyIUSb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyIUSb.h; sourceTree = "<group>"; };
+		C2A078DC23CC52390064845F /* My_File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = My_File.h; sourceTree = "<group>"; };
+		C2A078DD23CC52390064845F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C2A078DE23CC52390064845F /* My_File.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = My_File.c; sourceTree = "<group>"; };
+		C2A078E023CC52D10064845F /* libglib-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libglib-2.0.a"; sourceTree = "<group>"; };
+		C2A078E223CC52E20064845F /* libgobject-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libgobject-2.0.a"; sourceTree = "<group>"; };
+		C2A078E623CC53260064845F /* gmarkup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmarkup.h; sourceTree = "<group>"; };
+		C2A078E723CC53260064845F /* ghmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghmac.h; sourceTree = "<group>"; };
+		C2A078E823CC53260064845F /* gtimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtimer.h; sourceTree = "<group>"; };
+		C2A078E923CC53260064845F /* gvariant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gvariant.h; sourceTree = "<group>"; };
+		C2A078EA23CC53260064845F /* glist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glist.h; sourceTree = "<group>"; };
+		C2A078EB23CC53260064845F /* gtrashstack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtrashstack.h; sourceTree = "<group>"; };
+		C2A078EC23CC53260064845F /* gbookmarkfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gbookmarkfile.h; sourceTree = "<group>"; };
+		C2A078ED23CC53260064845F /* gprimes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gprimes.h; sourceTree = "<group>"; };
+		C2A078EE23CC53260064845F /* grand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grand.h; sourceTree = "<group>"; };
+		C2A078EF23CC53260064845F /* gurifuncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gurifuncs.h; sourceTree = "<group>"; };
+		C2A078F023CC53260064845F /* gchecksum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gchecksum.h; sourceTree = "<group>"; };
+		C2A078F123CC53260064845F /* gtestutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtestutils.h; sourceTree = "<group>"; };
+		C2A078F223CC53260064845F /* gslist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gslist.h; sourceTree = "<group>"; };
+		C2A078F323CC53260064845F /* gthreadpool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gthreadpool.h; sourceTree = "<group>"; };
+		C2A078F423CC53260064845F /* garray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = garray.h; sourceTree = "<group>"; };
+		C2A078F523CC53260064845F /* gbytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gbytes.h; sourceTree = "<group>"; };
+		C2A078F623CC53260064845F /* gconvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gconvert.h; sourceTree = "<group>"; };
+		C2A078F723CC53260064845F /* gdir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gdir.h; sourceTree = "<group>"; };
+		C2A078F823CC53260064845F /* gkeyfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gkeyfile.h; sourceTree = "<group>"; };
+		C2A078F923CC53260064845F /* gstrfuncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gstrfuncs.h; sourceTree = "<group>"; };
+		C2A078FA23CC53260064845F /* gmappedfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmappedfile.h; sourceTree = "<group>"; };
+		C2A078FB23CC53260064845F /* gstdio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gstdio.h; sourceTree = "<group>"; };
+		C2A078FC23CC53260064845F /* gpoll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gpoll.h; sourceTree = "<group>"; };
+		C2A078FD23CC53260064845F /* gunicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gunicode.h; sourceTree = "<group>"; };
+		C2A078FE23CC53260064845F /* gdataset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gdataset.h; sourceTree = "<group>"; };
+		C2A078FF23CC53260064845F /* gqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gqueue.h; sourceTree = "<group>"; };
+		C2A0790023CC53260064845F /* gsequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gsequence.h; sourceTree = "<group>"; };
+		C2A0790123CC53260064845F /* gvarianttype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gvarianttype.h; sourceTree = "<group>"; };
+		C2A0790223CC53260064845F /* ghash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghash.h; sourceTree = "<group>"; };
+		C2A0790323CC53260064845F /* gqsort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gqsort.h; sourceTree = "<group>"; };
+		C2A0790423CC53260064845F /* gscanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gscanner.h; sourceTree = "<group>"; };
+		C2A0790523CC53260064845F /* ggettext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ggettext.h; sourceTree = "<group>"; };
+		C2A0790623CC53260064845F /* gbase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gbase64.h; sourceTree = "<group>"; };
+		C2A0790723CC53260064845F /* gasyncqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gasyncqueue.h; sourceTree = "<group>"; };
+		C2A0790823CC53260064845F /* gmem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmem.h; sourceTree = "<group>"; };
+		C2A0790923CC53260064845F /* genviron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = genviron.h; sourceTree = "<group>"; };
+		C2A0790A23CC53260064845F /* gshell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gshell.h; sourceTree = "<group>"; };
+		C2A0790B23CC53260064845F /* gbacktrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gbacktrace.h; sourceTree = "<group>"; };
+		C2A0790C23CC53260064845F /* gerror.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gerror.h; sourceTree = "<group>"; };
+		C2A0790D23CC53260064845F /* gmain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmain.h; sourceTree = "<group>"; };
+		C2A0790E23CC53260064845F /* gfileutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gfileutils.h; sourceTree = "<group>"; };
+		C2A0790F23CC53260064845F /* gutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gutils.h; sourceTree = "<group>"; };
+		C2A0791023CC53260064845F /* gpattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gpattern.h; sourceTree = "<group>"; };
+		C2A0791123CC53260064845F /* ghostutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghostutils.h; sourceTree = "<group>"; };
+		C2A0791223CC53260064845F /* gtypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtypes.h; sourceTree = "<group>"; };
+		C2A0791323CC53260064845F /* gstringchunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gstringchunk.h; sourceTree = "<group>"; };
+		C2A0791423CC53260064845F /* guuid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = guuid.h; sourceTree = "<group>"; };
+		C2A0791523CC53260064845F /* gcharset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gcharset.h; sourceTree = "<group>"; };
+		C2A0791623CC53260064845F /* gquark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gquark.h; sourceTree = "<group>"; };
+		C2A0791723CC53260064845F /* gi18n-lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gi18n-lib.h"; sourceTree = "<group>"; };
+		C2A0791823CC53260064845F /* gatomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gatomic.h; sourceTree = "<group>"; };
+		C2A0791923CC53260064845F /* gdatetime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gdatetime.h; sourceTree = "<group>"; };
+		C2A0791A23CC53260064845F /* gstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gstring.h; sourceTree = "<group>"; };
+		C2A0791B23CC53260064845F /* goption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = goption.h; sourceTree = "<group>"; };
+		C2A0791C23CC53260064845F /* gdate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gdate.h; sourceTree = "<group>"; };
+		C2A0791D23CC53260064845F /* gversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gversion.h; sourceTree = "<group>"; };
+		C2A0791E23CC53260064845F /* gslice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gslice.h; sourceTree = "<group>"; };
+		C2A0791F23CC53260064845F /* ghook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ghook.h; sourceTree = "<group>"; };
+		C2A0792023CC53260064845F /* glib-autocleanups.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glib-autocleanups.h"; sourceTree = "<group>"; };
+		C2A0792123CC53260064845F /* galloca.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = galloca.h; sourceTree = "<group>"; };
+		C2A0792223CC53260064845F /* gprintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gprintf.h; sourceTree = "<group>"; };
+		C2A0792323CC53260064845F /* gthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gthread.h; sourceTree = "<group>"; };
+		C2A0792423CC53260064845F /* gversionmacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gversionmacros.h; sourceTree = "<group>"; };
+		C2A0792523CC53260064845F /* gtimezone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtimezone.h; sourceTree = "<group>"; };
+		C2A0792623CC53260064845F /* gmacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmacros.h; sourceTree = "<group>"; };
+		C2A0792723CC53260064845F /* giochannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = giochannel.h; sourceTree = "<group>"; };
+		C2A0792823CC53260064845F /* gwin32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gwin32.h; sourceTree = "<group>"; };
+		C2A0792923CC53260064845F /* gi18n.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gi18n.h; sourceTree = "<group>"; };
+		C2A0792A23CC53260064845F /* gbitlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gbitlock.h; sourceTree = "<group>"; };
+		C2A0792B23CC53260064845F /* gnode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gnode.h; sourceTree = "<group>"; };
+		C2A0792C23CC53260064845F /* gmessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmessages.h; sourceTree = "<group>"; };
+		C2A0792D23CC53260064845F /* gregex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gregex.h; sourceTree = "<group>"; };
+		C2A0792E23CC53260064845F /* gspawn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gspawn.h; sourceTree = "<group>"; };
+		C2A0792F23CC53260064845F /* gtree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtree.h; sourceTree = "<group>"; };
+		C2A0793123CC53260064845F /* gcompletion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gcompletion.h; sourceTree = "<group>"; };
+		C2A0793223CC53260064845F /* gallocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gallocator.h; sourceTree = "<group>"; };
+		C2A0793323CC53260064845F /* grel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = grel.h; sourceTree = "<group>"; };
+		C2A0793423CC53260064845F /* gmain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmain.h; sourceTree = "<group>"; };
+		C2A0793523CC53260064845F /* gcache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gcache.h; sourceTree = "<group>"; };
+		C2A0793623CC53260064845F /* gthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gthread.h; sourceTree = "<group>"; };
+		C2A0793723CC53330064845F /* glib-object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glib-object.h"; sourceTree = "<group>"; };
+		C2A0793823CC53330064845F /* glib-unix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glib-unix.h"; sourceTree = "<group>"; };
+		C2A0793A23CC53330064845F /* glib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glib.h; sourceTree = "<group>"; };
+		C2A0794C23CC54C70064845F /* gparam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gparam.h; sourceTree = "<group>"; };
+		C2A0794D23CC54C70064845F /* gparamspecs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gparamspecs.h; sourceTree = "<group>"; };
+		C2A0794E23CC54C70064845F /* gsignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gsignal.h; sourceTree = "<group>"; };
+		C2A0794F23CC54C70064845F /* genums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = genums.h; sourceTree = "<group>"; };
+		C2A0795023CC54C70064845F /* gclosure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gclosure.h; sourceTree = "<group>"; };
+		C2A0795123CC54C70064845F /* gvaluearray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gvaluearray.h; sourceTree = "<group>"; };
+		C2A0795223CC54C70064845F /* gbinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gbinding.h; sourceTree = "<group>"; };
+		C2A0795323CC54C70064845F /* gtypeplugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtypeplugin.h; sourceTree = "<group>"; };
+		C2A0795423CC54C70064845F /* gobjectnotifyqueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gobjectnotifyqueue.c; sourceTree = "<group>"; };
+		C2A0795523CC54C70064845F /* gsourceclosure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gsourceclosure.h; sourceTree = "<group>"; };
+		C2A0795623CC54C70064845F /* glib-types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glib-types.h"; sourceTree = "<group>"; };
+		C2A0795723CC54C70064845F /* gtype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtype.h; sourceTree = "<group>"; };
+		C2A0795823CC54C70064845F /* gvaluetypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gvaluetypes.h; sourceTree = "<group>"; };
+		C2A0795923CC54C70064845F /* gboxed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gboxed.h; sourceTree = "<group>"; };
+		C2A0795A23CC54C70064845F /* gtypemodule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gtypemodule.h; sourceTree = "<group>"; };
+		C2A0795B23CC54C70064845F /* gvalue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gvalue.h; sourceTree = "<group>"; };
+		C2A0795C23CC54C70064845F /* gvaluecollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gvaluecollector.h; sourceTree = "<group>"; };
+		C2A0795D23CC54C70064845F /* gobject-autocleanups.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gobject-autocleanups.h"; sourceTree = "<group>"; };
+		C2A0795E23CC54C70064845F /* gobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gobject.h; sourceTree = "<group>"; };
+		C2A0795F23CC54C70064845F /* gmarshal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmarshal.h; sourceTree = "<group>"; };
+		C2A0796423CC565B0064845F /* glibconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glibconfig.h; sourceTree = "<group>"; };
+		C2A0796623CC56730064845F /* gmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
+		C2A0796723CC56730064845F /* graphene-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "graphene-config.h"; sourceTree = "<group>"; };
+		C2A0796823CC56730064845F /* glibconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glibconfig.h; sourceTree = "<group>"; };
+		C2A0796B23CC57EB0064845F /* libglib-2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libglib-2.0.dylib"; sourceTree = "<group>"; };
+		C2A0796D23CC58000064845F /* libgobject-2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgobject-2.0.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +177,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A078E123CC52D10064845F /* libglib-2.0.a in Frameworks */,
+				C2A0796C23CC57EB0064845F /* libglib-2.0.dylib in Frameworks */,
+				C2A0796E23CC58000064845F /* libgobject-2.0.dylib in Frameworks */,
+				C2A078E323CC52E20064845F /* libgobject-2.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +206,215 @@
 		C2A078C323CC521F0064845F /* Gobject_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				C2A078C423CC521F0064845F /* main.c */,
+				C2A078E423CC53150064845F /* headers */,
+				C2A078DF23CC52C40064845F /* lib */,
+				C2A078CB23CC52380064845F /* demo1 */,
+				C2A078CF23CC52380064845F /* Kb_bibtex_demo */,
+				C2A078D523CC52390064845F /* My_IUsb_demo */,
+				C2A078DB23CC52390064845F /* Signal_demo */,
 			);
 			path = Gobject_Demo;
+			sourceTree = "<group>";
+		};
+		C2A078CB23CC52380064845F /* demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				C2A078CC23CC52380064845F /* Gobject_demo1.c */,
+				C2A078CD23CC52380064845F /* Gobject_demo1.h */,
+				C2A078CE23CC52380064845F /* main.m */,
+			);
+			path = demo1;
+			sourceTree = "<group>";
+		};
+		C2A078CF23CC52380064845F /* Kb_bibtex_demo */ = {
+			isa = PBXGroup;
+			children = (
+				C2A078D023CC52380064845F /* Kb_article.h */,
+				C2A078D123CC52380064845F /* Kb_bibtex.c */,
+				C2A078D223CC52380064845F /* Kb_bibtex.h */,
+				C2A078D323CC52380064845F /* Kb_article.c */,
+				C2A078D423CC52380064845F /* main.c */,
+			);
+			path = Kb_bibtex_demo;
+			sourceTree = "<group>";
+		};
+		C2A078D523CC52390064845F /* My_IUsb_demo */ = {
+			isa = PBXGroup;
+			children = (
+				C2A078D623CC52390064845F /* My_Udisk.h */,
+				C2A078D723CC52390064845F /* MyIUSb.c */,
+				C2A078D823CC52390064845F /* main.c */,
+				C2A078D923CC52390064845F /* My_Udisk.c */,
+				C2A078DA23CC52390064845F /* MyIUSb.h */,
+			);
+			path = My_IUsb_demo;
+			sourceTree = "<group>";
+		};
+		C2A078DB23CC52390064845F /* Signal_demo */ = {
+			isa = PBXGroup;
+			children = (
+				C2A078DC23CC52390064845F /* My_File.h */,
+				C2A078DD23CC52390064845F /* main.c */,
+				C2A078DE23CC52390064845F /* My_File.c */,
+			);
+			path = Signal_demo;
+			sourceTree = "<group>";
+		};
+		C2A078DF23CC52C40064845F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0796B23CC57EB0064845F /* libglib-2.0.dylib */,
+				C2A078E223CC52E20064845F /* libgobject-2.0.a */,
+				C2A078E023CC52D10064845F /* libglib-2.0.a */,
+				C2A0796D23CC58000064845F /* libgobject-2.0.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C2A078E423CC53150064845F /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0796523CC56730064845F /* x86_64 */,
+				C2A0794B23CC54C70064845F /* gobject */,
+				C2A0793723CC53330064845F /* glib-object.h */,
+				C2A0793823CC53330064845F /* glib-unix.h */,
+				C2A0793A23CC53330064845F /* glib.h */,
+				C2A0796423CC565B0064845F /* glibconfig.h */,
+				C2A078E523CC53260064845F /* glib */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		C2A078E523CC53260064845F /* glib */ = {
+			isa = PBXGroup;
+			children = (
+				C2A078E623CC53260064845F /* gmarkup.h */,
+				C2A078E723CC53260064845F /* ghmac.h */,
+				C2A078E823CC53260064845F /* gtimer.h */,
+				C2A078E923CC53260064845F /* gvariant.h */,
+				C2A078EA23CC53260064845F /* glist.h */,
+				C2A078EB23CC53260064845F /* gtrashstack.h */,
+				C2A078EC23CC53260064845F /* gbookmarkfile.h */,
+				C2A078ED23CC53260064845F /* gprimes.h */,
+				C2A078EE23CC53260064845F /* grand.h */,
+				C2A078EF23CC53260064845F /* gurifuncs.h */,
+				C2A078F023CC53260064845F /* gchecksum.h */,
+				C2A078F123CC53260064845F /* gtestutils.h */,
+				C2A078F223CC53260064845F /* gslist.h */,
+				C2A078F323CC53260064845F /* gthreadpool.h */,
+				C2A078F423CC53260064845F /* garray.h */,
+				C2A078F523CC53260064845F /* gbytes.h */,
+				C2A078F623CC53260064845F /* gconvert.h */,
+				C2A078F723CC53260064845F /* gdir.h */,
+				C2A078F823CC53260064845F /* gkeyfile.h */,
+				C2A078F923CC53260064845F /* gstrfuncs.h */,
+				C2A078FA23CC53260064845F /* gmappedfile.h */,
+				C2A078FB23CC53260064845F /* gstdio.h */,
+				C2A078FC23CC53260064845F /* gpoll.h */,
+				C2A078FD23CC53260064845F /* gunicode.h */,
+				C2A078FE23CC53260064845F /* gdataset.h */,
+				C2A078FF23CC53260064845F /* gqueue.h */,
+				C2A0790023CC53260064845F /* gsequence.h */,
+				C2A0790123CC53260064845F /* gvarianttype.h */,
+				C2A0790223CC53260064845F /* ghash.h */,
+				C2A0790323CC53260064845F /* gqsort.h */,
+				C2A0790423CC53260064845F /* gscanner.h */,
+				C2A0790523CC53260064845F /* ggettext.h */,
+				C2A0790623CC53260064845F /* gbase64.h */,
+				C2A0790723CC53260064845F /* gasyncqueue.h */,
+				C2A0790823CC53260064845F /* gmem.h */,
+				C2A0790923CC53260064845F /* genviron.h */,
+				C2A0790A23CC53260064845F /* gshell.h */,
+				C2A0790B23CC53260064845F /* gbacktrace.h */,
+				C2A0790C23CC53260064845F /* gerror.h */,
+				C2A0790D23CC53260064845F /* gmain.h */,
+				C2A0790E23CC53260064845F /* gfileutils.h */,
+				C2A0790F23CC53260064845F /* gutils.h */,
+				C2A0791023CC53260064845F /* gpattern.h */,
+				C2A0791123CC53260064845F /* ghostutils.h */,
+				C2A0791223CC53260064845F /* gtypes.h */,
+				C2A0791323CC53260064845F /* gstringchunk.h */,
+				C2A0791423CC53260064845F /* guuid.h */,
+				C2A0791523CC53260064845F /* gcharset.h */,
+				C2A0791623CC53260064845F /* gquark.h */,
+				C2A0791723CC53260064845F /* gi18n-lib.h */,
+				C2A0791823CC53260064845F /* gatomic.h */,
+				C2A0791923CC53260064845F /* gdatetime.h */,
+				C2A0791A23CC53260064845F /* gstring.h */,
+				C2A0791B23CC53260064845F /* goption.h */,
+				C2A0791C23CC53260064845F /* gdate.h */,
+				C2A0791D23CC53260064845F /* gversion.h */,
+				C2A0791E23CC53260064845F /* gslice.h */,
+				C2A0791F23CC53260064845F /* ghook.h */,
+				C2A0792023CC53260064845F /* glib-autocleanups.h */,
+				C2A0792123CC53260064845F /* galloca.h */,
+				C2A0792223CC53260064845F /* gprintf.h */,
+				C2A0792323CC53260064845F /* gthread.h */,
+				C2A0792423CC53260064845F /* gversionmacros.h */,
+				C2A0792523CC53260064845F /* gtimezone.h */,
+				C2A0792623CC53260064845F /* gmacros.h */,
+				C2A0792723CC53260064845F /* giochannel.h */,
+				C2A0792823CC53260064845F /* gwin32.h */,
+				C2A0792923CC53260064845F /* gi18n.h */,
+				C2A0792A23CC53260064845F /* gbitlock.h */,
+				C2A0792B23CC53260064845F /* gnode.h */,
+				C2A0792C23CC53260064845F /* gmessages.h */,
+				C2A0792D23CC53260064845F /* gregex.h */,
+				C2A0792E23CC53260064845F /* gspawn.h */,
+				C2A0792F23CC53260064845F /* gtree.h */,
+				C2A0793023CC53260064845F /* deprecated */,
+			);
+			path = glib;
+			sourceTree = "<group>";
+		};
+		C2A0793023CC53260064845F /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0793123CC53260064845F /* gcompletion.h */,
+				C2A0793223CC53260064845F /* gallocator.h */,
+				C2A0793323CC53260064845F /* grel.h */,
+				C2A0793423CC53260064845F /* gmain.h */,
+				C2A0793523CC53260064845F /* gcache.h */,
+				C2A0793623CC53260064845F /* gthread.h */,
+			);
+			path = deprecated;
+			sourceTree = "<group>";
+		};
+		C2A0794B23CC54C70064845F /* gobject */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0794C23CC54C70064845F /* gparam.h */,
+				C2A0794D23CC54C70064845F /* gparamspecs.h */,
+				C2A0794E23CC54C70064845F /* gsignal.h */,
+				C2A0794F23CC54C70064845F /* genums.h */,
+				C2A0795023CC54C70064845F /* gclosure.h */,
+				C2A0795123CC54C70064845F /* gvaluearray.h */,
+				C2A0795223CC54C70064845F /* gbinding.h */,
+				C2A0795323CC54C70064845F /* gtypeplugin.h */,
+				C2A0795423CC54C70064845F /* gobjectnotifyqueue.c */,
+				C2A0795523CC54C70064845F /* gsourceclosure.h */,
+				C2A0795623CC54C70064845F /* glib-types.h */,
+				C2A0795723CC54C70064845F /* gtype.h */,
+				C2A0795823CC54C70064845F /* gvaluetypes.h */,
+				C2A0795923CC54C70064845F /* gboxed.h */,
+				C2A0795A23CC54C70064845F /* gtypemodule.h */,
+				C2A0795B23CC54C70064845F /* gvalue.h */,
+				C2A0795C23CC54C70064845F /* gvaluecollector.h */,
+				C2A0795D23CC54C70064845F /* gobject-autocleanups.h */,
+				C2A0795E23CC54C70064845F /* gobject.h */,
+				C2A0795F23CC54C70064845F /* gmarshal.h */,
+			);
+			path = gobject;
+			sourceTree = "<group>";
+		};
+		C2A0796523CC56730064845F /* x86_64 */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0796623CC56730064845F /* gmp.h */,
+				C2A0796723CC56730064845F /* graphene-config.h */,
+				C2A0796823CC56730064845F /* glibconfig.h */,
+			);
+			path = x86_64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +474,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2A078C523CC521F0064845F /* main.c in Sources */,
+				C2A0793B23CC54390064845F /* Gobject_demo1.c in Sources */,
+				C2A0793C23CC54390064845F /* Gobject_demo1.h in Sources */,
+				C2A0793D23CC54390064845F /* main.m in Sources */,
+				C2A0793E23CC54390064845F /* Kb_article.h in Sources */,
+				C2A0793F23CC54390064845F /* Kb_bibtex.c in Sources */,
+				C2A0794023CC54390064845F /* Kb_bibtex.h in Sources */,
+				C2A0794123CC54390064845F /* Kb_article.c in Sources */,
+				C2A0794223CC54390064845F /* main.c in Sources */,
+				C2A0794323CC54390064845F /* My_Udisk.h in Sources */,
+				C2A0794423CC54390064845F /* MyIUSb.c in Sources */,
+				C2A0794523CC54390064845F /* main.c in Sources */,
+				C2A0794623CC54390064845F /* My_Udisk.c in Sources */,
+				C2A0794723CC54390064845F /* MyIUSb.h in Sources */,
+				C2A0794823CC54390064845F /* My_File.h in Sources */,
+				C2A0794923CC54390064845F /* main.c in Sources */,
+				C2A0794A23CC54390064845F /* My_File.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +611,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N53MSVV33L;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Gobject_Demo/headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Gobject_Demo/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -251,6 +626,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N53MSVV33L;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Gobject_Demo/headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Gobject_Demo/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
