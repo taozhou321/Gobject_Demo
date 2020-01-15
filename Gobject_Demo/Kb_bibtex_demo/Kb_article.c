@@ -34,7 +34,7 @@ static void kb_article_get_property(GObject *object, guint property_id, GValue *
     KbArticle *self = KB_ARTICLE(object);
     KbArticlePrivate *priv = KB_ARTICLE_GET_PRIVATE(object);
 //    KbBibtex *parent = KB_BIBTEX(object);
-//    
+//
     switch (property_id) {
         case PROPERTY_JOURNAL:
             g_value_set_string(value, priv->journal->str);
@@ -56,7 +56,7 @@ static void kb_article_get_property(GObject *object, guint property_id, GValue *
 static void kb_article_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec) {
     KbArticle *self = KB_ARTICLE(object);
     KbArticlePrivate *priv = KB_ARTICLE_GET_PRIVATE(self);
-    KbBibtex *parent = KB_BIBTEX(object);
+//    KbBibtex *parent = KB_BIBTEX(object);
     switch (property_id) {
         case PROPERTY_JOURNAL:
             if (priv->journal) {
@@ -98,7 +98,7 @@ static void kb_article_class_init(KbArticleClass *klass) {
     properties[PROPERTY_JOURNAL] = g_param_spec_string("journal", "Journal", "Bibliograhpy journal", NULL, G_PARAM_READWRITE);
     properties[PROPERTY_VOLUME] = g_param_spec_string("volume", "Volume", "Bibliograhpy volume", NULL, G_PARAM_READWRITE);
     properties[PROPERTY_NUMBER] = g_param_spec_string("number", "Number", "Bibliograhy number", NULL, G_PARAM_READWRITE);
-    properties[PROPERTY_PAGES] = g_param_spec_uint("pages", "Pages", "Bibliography pages", 0, G_MAXUINT, 0, G_PARAM_READWRITE);
+    properties[PROPERTY_PAGES] = g_param_spec_string("pages", "Pages", "Bibliography pages", NULL, G_PARAM_READWRITE);
     
     g_object_class_install_properties(base_class, N_PROPERTIES, properties);
 }

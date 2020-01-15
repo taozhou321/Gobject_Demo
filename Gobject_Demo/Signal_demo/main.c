@@ -20,7 +20,7 @@ static void file_print_tex(gpointer gobject, gpointer user_data) {
     g_print("invoking file_print_tex!\n");
 }
 
-int main() {
+int main_4() {
     MyFile *file = g_object_new(MY_TYPE_FILE, "name", "test.txt", NULL);
     
     g_signal_connect(file, "file-changed", G_CALLBACK(file_print), NULL);
