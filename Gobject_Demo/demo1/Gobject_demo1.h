@@ -44,6 +44,16 @@ struct _PMDListClass {
 };
 
 
-/*privae,定义获取类型函数,供PM_TYPE_DLIST调用，不建议直接调用*/
+/*
+ privae,定义获取类型函数,供PM_TYPE_DLIST调用，不建议直接调用
+ 向GObject库提供的类型管理系统提供要注册的PT类类型相关信息
+ *****************************************
+ 因为 p_t_get_type 函数是 g_object_new 函数的参数，当我们首次调用 g_object_new
+ 函数进行对象实例化时，p_t_get_type 函数便会被 g_object_new 函数调用，从而引发 GObject
+ 库的类型管理系统去接受 PT 类类型（例如 PMDList 类型）的申请并为其分配一个类型标识码作为 p_t_get_type
+ 函数的返回值。当 g_object_new 函数从 p_t_get_type 函数那里获取 PT
+ 类类型标识码之后，便可以进行对象实例的内存分配及属性的初始化
+ *****************************************
+ */
 GType pm_dlist_get_type(void);
 #endif /* Gobject_demo1_h */

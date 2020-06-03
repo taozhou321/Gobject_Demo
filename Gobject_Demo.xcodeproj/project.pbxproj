@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C214D200245A84630081C2E6 /* zt_animal.c in Sources */ = {isa = PBXBuildFile; fileRef = C214D1FF245A84630081C2E6 /* zt_animal.c */; };
+		C214D203245A8AA60081C2E6 /* zt_cat.c in Sources */ = {isa = PBXBuildFile; fileRef = C214D202245A8AA60081C2E6 /* zt_cat.c */; };
+		C214D206245A8E7F0081C2E6 /* ZTIAnimalInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = C214D205245A8E7F0081C2E6 /* ZTIAnimalInterface.c */; };
+		C214D208245AAF140081C2E6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C214D207245AAF140081C2E6 /* main.c */; };
 		C2A078E123CC52D10064845F /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A078E023CC52D10064845F /* libglib-2.0.a */; };
 		C2A078E323CC52E20064845F /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A078E223CC52E20064845F /* libgobject-2.0.a */; };
 		C2A0793B23CC54390064845F /* Gobject_demo1.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078CC23CC52380064845F /* Gobject_demo1.c */; };
@@ -27,6 +31,7 @@
 		C2A0794A23CC54390064845F /* My_File.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078DE23CC52390064845F /* My_File.c */; };
 		C2A0796C23CC57EB0064845F /* libglib-2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A0796B23CC57EB0064845F /* libglib-2.0.dylib */; };
 		C2A0796E23CC58000064845F /* libgobject-2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A0796D23CC58000064845F /* libgobject-2.0.dylib */; };
+		C2FF21A7248797C9005D89D5 /* signal-demo.c in Sources */ = {isa = PBXBuildFile; fileRef = C2FF21A6248797C9005D89D5 /* signal-demo.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +47,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C214D1FE245A84630081C2E6 /* zt_animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zt_animal.h; sourceTree = "<group>"; };
+		C214D1FF245A84630081C2E6 /* zt_animal.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zt_animal.c; sourceTree = "<group>"; };
+		C214D201245A8AA60081C2E6 /* zt_cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zt_cat.h; sourceTree = "<group>"; };
+		C214D202245A8AA60081C2E6 /* zt_cat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zt_cat.c; sourceTree = "<group>"; };
+		C214D204245A8E7F0081C2E6 /* ZTIAnimalInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTIAnimalInterface.h; sourceTree = "<group>"; };
+		C214D205245A8E7F0081C2E6 /* ZTIAnimalInterface.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ZTIAnimalInterface.c; sourceTree = "<group>"; };
+		C214D207245AAF140081C2E6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		C2A078C123CC521F0064845F /* Gobject_Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gobject_Demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A078CC23CC52380064845F /* Gobject_demo1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Gobject_demo1.c; sourceTree = "<group>"; };
 		C2A078CD23CC52380064845F /* Gobject_demo1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gobject_demo1.h; sourceTree = "<group>"; };
@@ -170,6 +182,8 @@
 		C2A0796823CC56730064845F /* glibconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glibconfig.h; sourceTree = "<group>"; };
 		C2A0796B23CC57EB0064845F /* libglib-2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libglib-2.0.dylib"; sourceTree = "<group>"; };
 		C2A0796D23CC58000064845F /* libgobject-2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgobject-2.0.dylib"; sourceTree = "<group>"; };
+		C2FF21A5248797C9005D89D5 /* signal-demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "signal-demo.h"; sourceTree = "<group>"; };
+		C2FF21A6248797C9005D89D5 /* signal-demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "signal-demo.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +201,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C214D1FD245A83970081C2E6 /* AnimalDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C214D1FE245A84630081C2E6 /* zt_animal.h */,
+				C214D1FF245A84630081C2E6 /* zt_animal.c */,
+				C214D201245A8AA60081C2E6 /* zt_cat.h */,
+				C214D202245A8AA60081C2E6 /* zt_cat.c */,
+				C214D204245A8E7F0081C2E6 /* ZTIAnimalInterface.h */,
+				C214D205245A8E7F0081C2E6 /* ZTIAnimalInterface.c */,
+				C214D207245AAF140081C2E6 /* main.c */,
+			);
+			path = AnimalDemo;
+			sourceTree = "<group>";
+		};
 		C2A078B823CC521F0064845F = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +234,7 @@
 		C2A078C323CC521F0064845F /* Gobject_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C214D1FD245A83970081C2E6 /* AnimalDemo */,
 				C2A078E423CC53150064845F /* headers */,
 				C2A078DF23CC52C40064845F /* lib */,
 				C2A078CB23CC52380064845F /* demo1 */,
@@ -230,9 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				C2A078D023CC52380064845F /* Kb_article.h */,
+				C2A078D323CC52380064845F /* Kb_article.c */,
 				C2A078D123CC52380064845F /* Kb_bibtex.c */,
 				C2A078D223CC52380064845F /* Kb_bibtex.h */,
-				C2A078D323CC52380064845F /* Kb_article.c */,
 				C2A078D423CC52380064845F /* main.c */,
 			);
 			path = Kb_bibtex_demo;
@@ -254,8 +283,10 @@
 			isa = PBXGroup;
 			children = (
 				C2A078DC23CC52390064845F /* My_File.h */,
-				C2A078DD23CC52390064845F /* main.c */,
 				C2A078DE23CC52390064845F /* My_File.c */,
+				C2A078DD23CC52390064845F /* main.c */,
+				C2FF21A5248797C9005D89D5 /* signal-demo.h */,
+				C2FF21A6248797C9005D89D5 /* signal-demo.c */,
 			);
 			path = Signal_demo;
 			sourceTree = "<group>";
@@ -474,9 +505,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C214D208245AAF140081C2E6 /* main.c in Sources */,
+				C214D200245A84630081C2E6 /* zt_animal.c in Sources */,
+				C2FF21A7248797C9005D89D5 /* signal-demo.c in Sources */,
 				C2A0793B23CC54390064845F /* Gobject_demo1.c in Sources */,
 				C2A0793C23CC54390064845F /* Gobject_demo1.h in Sources */,
 				C2A0793D23CC54390064845F /* main.m in Sources */,
+				C214D203245A8AA60081C2E6 /* zt_cat.c in Sources */,
 				C2A0793E23CC54390064845F /* Kb_article.h in Sources */,
 				C2A0793F23CC54390064845F /* Kb_bibtex.c in Sources */,
 				C2A0794023CC54390064845F /* Kb_bibtex.h in Sources */,
@@ -488,6 +523,7 @@
 				C2A0794623CC54390064845F /* My_Udisk.c in Sources */,
 				C2A0794723CC54390064845F /* MyIUSb.h in Sources */,
 				C2A0794823CC54390064845F /* My_File.h in Sources */,
+				C214D206245A8E7F0081C2E6 /* ZTIAnimalInterface.c in Sources */,
 				C2A0794923CC54390064845F /* main.c in Sources */,
 				C2A0794A23CC54390064845F /* My_File.c in Sources */,
 			);

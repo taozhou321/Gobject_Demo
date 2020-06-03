@@ -44,7 +44,7 @@ int main_2() {
     return 0;
 }
 
-int main() {
+int main_22() {
     KbArticle *entry = g_object_new(KB_TYPE_ARTICLE,  "title", "The {\\TeX}Book",
                                       "author", "Knuth, D. E.",
                                       "publisher", "Addison-Wesley Professional",
@@ -70,5 +70,10 @@ int main() {
                 "volume: %s\n"
                 "pages: %s \n",
                 title, author, publisher, year, volume, pages);
+    return 0;
+}
+
+int test() {
+    printf("i am test");
     return 0;
 }
