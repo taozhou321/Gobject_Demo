@@ -11,6 +11,9 @@
 		C214D203245A8AA60081C2E6 /* zt_cat.c in Sources */ = {isa = PBXBuildFile; fileRef = C214D202245A8AA60081C2E6 /* zt_cat.c */; };
 		C214D206245A8E7F0081C2E6 /* ZTIAnimalInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = C214D205245A8E7F0081C2E6 /* ZTIAnimalInterface.c */; };
 		C214D208245AAF140081C2E6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C214D207245AAF140081C2E6 /* main.c */; };
+		C22312FD249B7ECC000C459F /* demo1.c in Sources */ = {isa = PBXBuildFile; fileRef = C22312FC249B7ECC000C459F /* demo1.c */; };
+		C22CD124249C9CD8004C9DD4 /* void_string_string.c in Sources */ = {isa = PBXBuildFile; fileRef = C22CD123249C9CD7004C9DD4 /* void_string_string.c */; };
+		C23AF3EA248F611F006C1FB0 /* signal-demo-main2.c in Sources */ = {isa = PBXBuildFile; fileRef = C23AF3E9248F611F006C1FB0 /* signal-demo-main2.c */; };
 		C2A078E123CC52D10064845F /* libglib-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A078E023CC52D10064845F /* libglib-2.0.a */; };
 		C2A078E323CC52E20064845F /* libgobject-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A078E223CC52E20064845F /* libgobject-2.0.a */; };
 		C2A0793B23CC54390064845F /* Gobject_demo1.c in Sources */ = {isa = PBXBuildFile; fileRef = C2A078CC23CC52380064845F /* Gobject_demo1.c */; };
@@ -54,6 +57,12 @@
 		C214D204245A8E7F0081C2E6 /* ZTIAnimalInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTIAnimalInterface.h; sourceTree = "<group>"; };
 		C214D205245A8E7F0081C2E6 /* ZTIAnimalInterface.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ZTIAnimalInterface.c; sourceTree = "<group>"; };
 		C214D207245AAF140081C2E6 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C22312FC249B7ECC000C459F /* demo1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = demo1.c; sourceTree = "<group>"; wrapsLines = 0; };
+		C22312FF249BABD3000C459F /* Note.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Note.txt; sourceTree = "<group>"; };
+		C22CD122249C9C73004C9DD4 /* void_string_string.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = void_string_string.txt; sourceTree = "<group>"; };
+		C22CD123249C9CD7004C9DD4 /* void_string_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = void_string_string.c; sourceTree = "<group>"; };
+		C22CD125249C9DAA004C9DD4 /* void_string_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = void_string_string.h; sourceTree = "<group>"; };
+		C23AF3E9248F611F006C1FB0 /* signal-demo-main2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "signal-demo-main2.c"; sourceTree = "<group>"; };
 		C2A078C123CC521F0064845F /* Gobject_Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gobject_Demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A078CC23CC52380064845F /* Gobject_demo1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Gobject_demo1.c; sourceTree = "<group>"; };
 		C2A078CD23CC52380064845F /* Gobject_demo1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gobject_demo1.h; sourceTree = "<group>"; };
@@ -215,6 +224,18 @@
 			path = AnimalDemo;
 			sourceTree = "<group>";
 		};
+		C22312FB249B7EB3000C459F /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				C22CD125249C9DAA004C9DD4 /* void_string_string.h */,
+				C22CD123249C9CD7004C9DD4 /* void_string_string.c */,
+				C22312FC249B7ECC000C459F /* demo1.c */,
+				C22312FF249BABD3000C459F /* Note.txt */,
+				C22CD122249C9C73004C9DD4 /* void_string_string.txt */,
+			);
+			path = Closure;
+			sourceTree = "<group>";
+		};
 		C2A078B823CC521F0064845F = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +255,7 @@
 		C2A078C323CC521F0064845F /* Gobject_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				C22312FB249B7EB3000C459F /* Closure */,
 				C214D1FD245A83970081C2E6 /* AnimalDemo */,
 				C2A078E423CC53150064845F /* headers */,
 				C2A078DF23CC52C40064845F /* lib */,
@@ -271,10 +293,10 @@
 			isa = PBXGroup;
 			children = (
 				C2A078D623CC52390064845F /* My_Udisk.h */,
-				C2A078D723CC52390064845F /* MyIUSb.c */,
-				C2A078D823CC52390064845F /* main.c */,
 				C2A078D923CC52390064845F /* My_Udisk.c */,
+				C2A078D823CC52390064845F /* main.c */,
 				C2A078DA23CC52390064845F /* MyIUSb.h */,
+				C2A078D723CC52390064845F /* MyIUSb.c */,
 			);
 			path = My_IUsb_demo;
 			sourceTree = "<group>";
@@ -287,6 +309,7 @@
 				C2A078DD23CC52390064845F /* main.c */,
 				C2FF21A5248797C9005D89D5 /* signal-demo.h */,
 				C2FF21A6248797C9005D89D5 /* signal-demo.c */,
+				C23AF3E9248F611F006C1FB0 /* signal-demo-main2.c */,
 			);
 			path = Signal_demo;
 			sourceTree = "<group>";
@@ -516,6 +539,7 @@
 				C2A0793F23CC54390064845F /* Kb_bibtex.c in Sources */,
 				C2A0794023CC54390064845F /* Kb_bibtex.h in Sources */,
 				C2A0794123CC54390064845F /* Kb_article.c in Sources */,
+				C22CD124249C9CD8004C9DD4 /* void_string_string.c in Sources */,
 				C2A0794223CC54390064845F /* main.c in Sources */,
 				C2A0794323CC54390064845F /* My_Udisk.h in Sources */,
 				C2A0794423CC54390064845F /* MyIUSb.c in Sources */,
@@ -525,6 +549,8 @@
 				C2A0794823CC54390064845F /* My_File.h in Sources */,
 				C214D206245A8E7F0081C2E6 /* ZTIAnimalInterface.c in Sources */,
 				C2A0794923CC54390064845F /* main.c in Sources */,
+				C23AF3EA248F611F006C1FB0 /* signal-demo-main2.c in Sources */,
+				C22312FD249B7ECC000C459F /* demo1.c in Sources */,
 				C2A0794A23CC54390064845F /* My_File.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

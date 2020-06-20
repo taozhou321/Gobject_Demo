@@ -36,6 +36,7 @@ static void my_udisk_class_init(MyUdiskClass *self) {
 }
 
 static void my_iusb_interface_init(MyIUsbInterface *iface) {
+    ///!!!:这里设置了接口指针指向的函数所以能调用my_udisk_read
     iface->read = my_udisk_read;
     iface->write = my_udisk_write;
 }

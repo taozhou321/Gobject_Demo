@@ -1,0 +1,147 @@
+GClouse结构体重对使用者较为重要的三个成员是marshal、data、marshal_data
+其中marshal是一个函数指针，指向一个回调函数的调用者；data与marshal_data
+皆为gpointer指针类型。对于C语言闭包，data指向用户向回调函数传递的数据地址，
+而marshal_data则指向回调函数。
+我知道，这句话也许会引起下面的问答。
+
+Q：那个 GCClosure 结构体中不是已经有了一个指向回调函数的 callback 指针吗？
+A：这是因为callback 所指向的函数是闭包默认的回调函数，而 GObject 库允许你自由切换回调函数，
+可将 marshal_data 看作是一个开关，它可以暂时屏蔽 GCClosure 中的 callback 所指向的回调函数，
+而启用 marshal_data 所指向的回调函数。事后，可以调用 g_closure_set_meta_marshal函数将
+marshal_data所指向的回调函数屏蔽，这样闭包的回调函数又被切换为 callback 所指向的回调函数了。
+
+GClosure *closure = g_cclosure_new (G_CALLBACK (float_compare), &a, NULL);
+g_closure_set_marshal (closure, g_cclosure_user_marshal_INT__VOID_VOID);
+他们一起实现了下图所示的数据结构：
+                            GClosure *closure
+                               /
+                             指向
+                             / \
+                            /   \
+                          包含   包含
+                          /       \
+                         /         \
+                    callback指针  GClosure结构体 --------包含---------- marshal_data指针
+                       /            /  \                                    \
+                      /            /    \                                    \
+                    指向         包含     \                                   指向
+                    /            /       \                                    \
+                   /            /         \                                    \
+         float_compare函数     data指针  marshal指针(函数指针)                    NULL
+                              /            \
+                             /              \
+                           指向              指向
+                           /                  \
+                          /                    \
+                    浮点数变量a    g_closure_user_marshal_INT__VOID_VOID函数
+
+compare函数的主干部分
+static void
+compare (GClosure *a, void *b)
+{
+        ... ...
+ 
+        g_closure_invoke (a, &return_value, 1, &param_value, NULL);
+        gint r = g_value_get_int (&return_value);
+ 
+        ... ...
+}
+由于compare函数的第一个参数是闭包closure, 它已经包含了浮点数变量a和回调函数float_compare。
+当我们将closure作为g_closure_invoke函数的参数时，后者会基于closure中的marshal指针调用
+g_closure_user_marshal_INT__VOID_VOID函数，而g_closure_user_marshal_INT__VOID_VOID函数
+是我们自己定义的，对于本文示例主干部分如下
+void
+g_cclosure_user_marshal_INT__VOID_VOID ( ... )
+{
+        ... ... ...
+ 
+        if (G_CCLOSURE_SWAP_DATA (closure))
+        {
+                data1 = closure->data;
+                data2 = g_value_peek_pointer (param_values + 0);
+        }
+ 
+        ... ... ...
+ 
+        callback = (GMarshalFunc_INT__VOID_VOID) (
+                marshal_data ? marshal_data : cc->callback);
+         
+        v_return = callback (data1, data2);
+ 
+        ... ... ...
+}
+上述代码所做工作无非是从closure闭包中先获取浮点数变量a，即data1，然后从g_closure_user_marshal_INT__VOID_VOID
+函数的参数中获取浮点数变量b，即data2，然后再从closure闭包中获得callback指针所指向的回调函数，即float_compare，
+最终完成浮点数a与b的大小比较
+闭包调用的真个过程大致如下图所示：
+                        |
+                        |
+                    浮点数变量b
+                        |
+                        |
+                        ↓
+----闭包closure---->compare函数
+
+GClosure函数的闭包工作过程非常繁琐，它所做的主要工作就是向回调函数的调用过程中插入两个环节，即
+g_closure_invoke函数与g_closure_user_mashal_*__**函数。这样做的主要目的是提高闭包的灵活性。
+就像是链条，如果只有 2 个节点，那么它只能像一根直线段那样生存，如果将其改造成 4 个节点，它就变成了一条 3 次曲线了！
+
+更换marshal
+前文说过，GClosure 结构体中有一个 marshal_data 指针，它也可以指向一个回调函数，并且会取代 GCClosure
+结构体中callback指针所指向的回调函数。为了充分说明这一点，我们对前文的 GClosure 示例进行一些修改，如下：
+增加：
+static gint
+str_compare_new (void *a, void *b)
+{
+        g_print ("\nI'm a new marshaller\n");
+ 
+        return (str_compare (a, b));
+}
+修改main：
+int
+main (void)
+{
+        g_type_init ();
+         
+        gchar *s1 = "Hello World!\n";
+        gchar *s2 = "Hello!\n";
+ 
+        GClosure *closure = g_cclosure_new (G_CALLBACK (str_compare), s1, NULL);
+        g_closure_set_marshal (closure, g_cclosure_user_marshal_INT__VOID_VOID);
+        compare (closure, s2);
+ 
+        g_closure_set_meta_marshal (closure, str_compare_new,
+                                    g_cclosure_user_marshal_INT__VOID_VOID);
+        compare (closure, s2);
+ 
+        g_closure_unref (closure);
+         
+        return 0;
+}
+上述代码所做的修改，主要是删除了有关浮点数比较的示例部分，然后添加了一个新函数 str_compare_new，
+并对 main 函数中字符串比较部分的代码做了变动，重点观察以下代码：
+/* main 函数代码片段 */
+GClosure *closure = g_cclosure_new (G_CALLBACK (str_compare), s1, NULL);
+g_closure_set_marshal (closure, g_cclosure_user_marshal_INT__VOID_VOID);
+compare (closure, s2);
+
+g_closure_set_meta_marshal (closure, str_compare_new,
+g_cclosure_user_marshal_INT__VOID_VOID);
+compare (closure, s2);
+第一次调用 compare 函数，闭包函数调用链的终端是 str_compare 函数，而第二次调用 compare 函数时，
+闭包函数调用链的终端是 str_compare_new 函数，它再去调用 str_compare 实现字串比较。这是因为，
+在第二次调用 compare 函数之前，我们通过 g_closure_set_meta_marshal 函数设置了 closure 闭包的
+marshal_data 指针，使其指向了 str_compare_new 函数。这样，在 g_cclosure_user_marshal_INT__VOID_VOID 函数中，
+代码：
+callback = (GMarshalFunc_INT__VOID_VOID) (marshal_data ? marshal_data : cc->callback)
+callback 的值会是 marshal_data，而非 cc->callback。
+
+如何又快又好的产生 g_cclosure_user_marshal_* 函数？
+GLib 库提供了一个名为 glib-genmarshal 的工具，它可以根据我们给出的函数描述信息产生有效的 marshal 代码。
+上文中的 g_cclosure_user_marshal_INT__VOID_VOID 函数，我便是使用这个工具产生的。
+
+首先，准备好一份文本文档，例如 in__void_void.txt：
+INT:VOID,VOID
+然后，执行命令：
+glib-genmarshal --body int__void_void.txt > int__void_void.c
+即可产生 g_cclosure_user_marshal_INT__VOID_VOID 函数。

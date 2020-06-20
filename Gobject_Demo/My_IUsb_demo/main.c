@@ -8,12 +8,12 @@
 
 #include "My_Udisk.h"
 
-int main_3() {
+int main_4() {
     MyUdisk *udisk = g_object_new(MY_TYPE_UDISK, NULL);
     
     my_iusb_write(MY_IUSB(udisk), "i am a u-disk");
     gchar *data = my_iusb_read(MY_IUSB(udisk));
-
+    
     g_print("%s\n",data);
         
     g_print("Is udisk a MyIUsb object?\n");
